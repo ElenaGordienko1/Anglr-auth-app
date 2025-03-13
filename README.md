@@ -41,44 +41,30 @@ docker-compose up --build -d
 
 ### Пример успешного ответа:
 
+```sh
 {
-
   "token": "jwt_token",
-  
   "user": {
-  
     "id": 1,
-    
     "name": "Steven Seagull"
-    
   }
-  
 }
-
+```
 
 ### Пример неуспешного ответа:
+```sh
 {
-
   "errors": {
-  
     "email": [
-    
       "Invalid email address."
-      
     ],
-    
     "password": [
-    
       "This value is too short. It should have 6 characters or more.",
-      
       "The password must contain lowercase letter, uppercase letter, number and special character."
-      
     ]
-    
   }
-  
 }
-
+```
 
 ## Разработчик
 Гордиенко Елена
