@@ -8,13 +8,14 @@
 
 Для запуска проекта используется Docker и Docker Compose.
 Включены все необходимые конфигурации Docker (Dockerfile и docker-compose.yml).
-Технологии:
 
-### Angular 18/19
+### Технологии:
 
-### NX Monorepo
+Angular 18/19
 
-### SCSS для стилизации (без использования Tailwind, Material UI и других библиотек компонентов).
+NX Monorepo
+
+SCSS для стилизации.
 
 ## Функционал:
 
