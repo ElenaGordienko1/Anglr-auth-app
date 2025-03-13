@@ -24,17 +24,11 @@ SCSS для стилизации.
 Переключение тем (светлая/темная) с сохранением выбранной темы.
 Адаптивный дизайн.
 
-## Старт проекта
-1. Клонировать репозиторий
-bash
-git clone https://github.com/your-username/angular-auth-app.git
-bash
-cd angular-auth-app
-3. Запуск приложения через Docker Compose
-Приложение использует Docker Compose для развёртывания. Для запуска выполните следующую команду в корневой папке проекта:
-bash
-docker-compose up --build -d
-Приложение будет доступно по адресу http://localhost:4300.
+## Запуск проекта через Docker
+1. git clone https://github.com/your-username/angular-auth-app.git
+2. cd angular-auth-app
+3. docker-compose up --build -d
+4. Приложение будет доступно по адресу http://localhost:4300.
 
 ## При заполнении формы авторизации и успешном запросе:
 
