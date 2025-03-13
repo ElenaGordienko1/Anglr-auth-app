@@ -39,25 +39,43 @@ SCSS для стилизации.
 ### Пример успешного ответа:
 
 {
+
   "token": "jwt_token",
+  
   "user": {
+  
     "id": 1,
+    
     "name": "Steven Seagull"
+    
   }
+  
 }
+
 
 ### Пример неуспешного ответа:
 {
+
   "errors": {
+  
     "email": [
+    
       "Invalid email address."
+      
     ],
+    
     "password": [
+    
       "This value is too short. It should have 6 characters or more.",
+      
       "The password must contain lowercase letter, uppercase letter, number and special character."
+      
     ]
+    
   }
+  
 }
+
 
 ## Разработчик
 Гордиенко Елена
