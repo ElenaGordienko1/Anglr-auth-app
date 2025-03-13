@@ -1,0 +1,60 @@
+<div class="login-page">
+  <div class="theme-toggle-container">
+    <app-theme-toggle></app-theme-toggle>
+  </div>
+
+<div class="container">
+  <div class="login">
+    <form class="login-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="login__up">
+        <img src="/assets/imgs/bird.svg" alt="logo" class="login__up-image">
+        <h1 class="login__up-name">Sign In</h1>
+      </div>
+      <div class="login__down">  
+        <label class="control__label">
+          <span class="control__label-text"
+            [class.active]="emailFocused() || emailTouched()"
+            [class.error]="getEmailError()">
+            Email
+          </span>
+          <i class="error-attention" *ngIf="getEmailError()"></i>
+          <input 
+              formControlName="email" 
+              type="text" 
+              placeholder="Email" 
+              class="control__input" 
+              (input)="onInput('email')"
+              [ngClass]="{'error': getEmailError() !== null}"
+              (focus)="emailFocused.set(true)"
+              (blur)="emailFocused.set(false)">
+          <span class="error-text" *ngIf="getEmailError()">{{ getEmailError() }}</span>
+        </label>
+        <label class="control__label">
+          <span class="control__label-text"
+            [class.active]="passwordFocused() || passwordTouched()"
+            [class.error]="getPasswordError()">
+            Password
+          </span>
+          <i class="error-attention" *ngIf="getPasswordError()"></i>
+          <input 
+              formControlName="password" 
+              type="password" 
+              placeholder="Password" 
+              class="control__input" 
+              (input)="onInput('password')"
+              [ngClass]="{'error': getPasswordError() !== null}"
+              (focus)="passwordFocused.set(true)"
+              (blur)="passwordFocused.set(false)">
+          <span class="error-text" *ngIf="getPasswordError()">{{ getPasswordError() }}</span>
+        </label>
+        <div class="login__down-button">
+          <a href="#" class="login__down-link">Forgot password?</a>
+          <button type="submit" [disabled]="isLoading()" class="login__down-submit">Submit</button>
+        </div>
+      </div>
+    </form>
+    <div class="login__down-create-acount">
+      <a href="#" class="login__down-acount">Or create an account</a>
+    </div>
+  </div>    
+</div>

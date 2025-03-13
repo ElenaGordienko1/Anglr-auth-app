@@ -1,0 +1,233 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    flex-direction: column;
+}
+
+.theme-toggle-container {
+    display: flex;
+    position: fixed; 
+    top: 0;
+    right: 16px;
+    width: auto;
+    height: 64px;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 16px;
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 64px); 
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        max-width: 400px;
+        padding: 12px; 
+        min-height: calc(100vh - 64px); 
+    }
+
+    .theme-toggle-container {
+        width: 100%;
+        padding: 8px 24px; 
+        justify-content: flex-end; 
+    }
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    height: 464px;
+    border-radius: 12px;
+    border: 1px solid var(--input-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login__up-image {
+    width: 96px;
+    height: 96px;
+
+}
+
+.login__up-name{
+    width: 97px;
+    height: 40px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    vertical-align: bottom;
+    
+}
+
+.login__up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 368px;
+    height: 184px;
+    align-items: center;
+
+}
+
+.login__down{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.login__down-link{
+    display: flex;
+    text-decoration: none;
+    width: 138px;
+    height: 40px;
+    gap: 8px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    text-align: center;
+    color: var(--button-bg);
+    align-items: center;
+}
+
+.login__down-acount{
+    display: flex;
+    text-decoration: none;
+    gap: 8px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    text-align: center;
+    color: var(--button-bg);
+    justify-content: flex-end;
+    margin-right: 12px;
+    margin-top: 16px;
+}
+
+.login__down-button {
+    width: 336px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.login__down-submit{
+    width: 94px;  
+    height: 40px; 
+    border-radius: 100px;
+    background-color: var(--button-bg);
+    color: var(--text-bt);
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Roboto';
+    border: none;
+}
+
+.control__label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 80px; 
+    width: 328px; 
+    box-sizing: border-box; 
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+
+.control__label-text {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--text-inpt);
+    transition: all 0.1s ease;
+    pointer-events: none;
+    opacity: 0;
+    background: var(--light-color); 
+    padding: 0 5px; 
+}
+
+.control__label-text.active {
+    top: 1px;
+    font-size: 12px;
+    color: var(--text-inpt);
+    opacity: 1;
+    background-color: var(--background-color); 
+}
+
+.control__input {
+    border: 1px solid var(--input-border);
+    width: 100%;
+    max-width: 330px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    height: 56px;
+    box-sizing: border-box; 
+    width: 330px;
+    height: 58px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    background-color: var(--background-color);
+    color: var(--text-inpt);
+
+    &:focus {
+        border-color: var(--input-border);
+    }
+}
+
+.control__label-text.error {
+    color: var(--error-color);
+    background-color: var(--background-color);
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+
+.control__input.error {
+    border: 3px solid var(--error-color);
+}
+
+.error-text {
+    color: var(--error-color);
+    font-size: 12px;
+    width: 100%; 
+    min-height: 16px; 
+    text-align: left;
+    box-sizing: border-box;
+    width: 296px;
+    height: 16px;
+    margin-left: 16px;
+    margin-top: 4px;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+
+.error-attention {
+    background: var(--attention-icon);
+    width: 20px;
+    height: 20px;
+    top: 16px;
+    right:14px;
+    bottom:16px;
+    position: absolute;
+}

@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'fonts';
+
+:root {
+  --background-color: #FEF7FF;
+  --text-color: #1D1B20;
+  --button-bg: #65558F;
+  --button-text: #FFFFFF;
+  --input-border: #79747E;
+  --error-color: #B3261E;
+  --text-bt: #FFFFFF;
+  --text-inpt: #49454F;
+  --attention-icon: url('/assets/imgs/attention-red.svg');
+}
+  
+.dark-theme {
+  --background-color: #141218;
+  --text-color: #E6E0E9;
+  --button-bg: #D0BCFE;
+  --button-text: #ffffff;
+  --input-border: #938F99;
+  --error-color: #F2B8B5;
+  --text-bt: #381E72;
+  --text-inpt: #CAC4D0;
+  --attention-icon: url('/assets/imgs/attention-pink.svg');
+}
+
+* {
+  transition: background-color 0.4s ease-in-out;
+} 
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+  

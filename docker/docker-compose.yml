@@ -1,0 +1,10 @@
+services:
+  angular-auth-app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ..:/app
+    ports:
+      - "4300:4300"
+    command: npx nx serve angular-auth-app

@@ -54,6 +54,10 @@
     },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "host": "0.0.0.0",
+        "port": 4300
+      },
       "configurations": {
         "production": {
           "buildTarget": "angular-auth-app:build:production"
