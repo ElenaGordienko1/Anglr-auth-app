@@ -25,10 +25,10 @@ SCSS для стилизации.
 Адаптивный дизайн.
 
 ## Запуск проекта через Docker
-1. git clone https://github.com/your-username/angular-auth-app.git
-2. cd angular-auth-app
-3. docker-compose up --build -d
-4. Приложение будет доступно по адресу http://localhost:4300.
+git clone https://github.com/your-username/angular-auth-app.git
+cd angular-auth-app
+docker-compose up --build -d
+Приложение будет доступно по адресу http://localhost:4300.
 
 ## При заполнении формы авторизации и успешном запросе:
 
