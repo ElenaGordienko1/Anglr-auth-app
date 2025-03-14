@@ -29,8 +29,8 @@ SCSS для стилизации.
 Клонируйте репозиторий и выполните команду в корневой папке проекта:
 
 ```sh
-git clone https://github.com/your-username/angular-auth-app.git
-cd angular-auth-app
+git clone https://github.com/ElenaGordienko1/Anglr-auth-app.git
+cd angular-auth-app/docker
 docker-compose up --build -d
 ```
 Приложение будет доступно по адресу http://localhost:4300.
